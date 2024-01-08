@@ -1,0 +1,345 @@
+/** about me css **/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 8%;
+}
+
+/** tech stack css **/
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 8%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    height: fit-content;
+    margin: 1rem 0rem;
+    position: relative;
+    padding: 5px;
+    width: 18%;
+    box-shadow: 0px 5px 7px -5px rgb(0 0 0 / 50%);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 15px;
+    transition: all 0.2s ease-out;
+    color: #D80032;
+    font-weight: bold;
+}
+
+.cardholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/** nav bar css **/
+.navbar {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 2px 6px -5px rgb(0 0 0 / 50%);
+    justify-content: space-between;
+    position: sticky;
+    background-color: #fff;
+    padding: 0% 8%;
+}
+
+.navbar.active {
+    background: rgba(200, 200, 200, 0.8);
+}
+
+.navLogo {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navMenu {
+    display: flex;
+}
+
+.navLinks {
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navLinks:hover {
+    transition: all 0.2s ease-in-out;
+    color: #D80032;
+    font-weight: bold;
+}
+
+.navLogo:hover {
+    transition: all 0.2s ease-out;
+    color: #D80032;
+    font-weight: bold;
+}
+
+.developerName:hover {
+    color: #D80032;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/** work exp**/
+
+.ExperienceContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.exp_card_container {
+    background: #fff;
+    margin: 1rem 0rem;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 5px 7px -5px rgb(0 0 0 / 50%);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    padding: 3%;
+    width: 48%;
+}
+
+.workSection {
+    flex-direction: column;
+}
+
+.skillBox {
+    background: #D80032;
+    padding: 1% 5%;
+    box-shadow: 0px 5px 7px -5px rgb(0 0 0 / 50%);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    color: #fff;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.skill_set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/** Footer **/
+.footerContainer {
+    color: #fff;
+    background-color: #000;
+}
+
+.maine_container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_footer {
+    border-top: 1px solid #444;
+    padding: 2%;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    width: 92%;
+}
+
+.toPortfolio {
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.toPortfolio:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 15px;
+    transition: all 0.2s ease-out;
+    color: #D80032;
+}
+
+
+@media screen and (max-width: 1432px) {}
+
+@media screen and (max-width: 1250px) {}
+
+@media screen and (max-width: 1070px) {
+    .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .profile_pic_container {
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .card {
+        width: 30%;
+    }
+
+
+}
+
+@media screen and (max-width: 690px) {
+    .card {
+        width: 30%;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .maine_container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .card {
+        width: 45%;
+    }
+
+    .exp_card_container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        width: 65%;
+    }
+
+    .exp_card_container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 100%;
+    }
+
+    .exp_card_container {
+        width: 100%;
+    }
+
+    .profile_pic_container{
+        
+    }
+
+}
+
+
+/* @media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 65px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .navMenu.active {
+        background: #242222;
+        left: -191px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .navLinks {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navLinks:hover {
+        background-color: #fff;
+        color: #242424;
+        border-radius: 0;
+    }
+
+    .navbarLogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menuIcon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .faTimes {
+        color: #242424;
+        font-size: 2rem;
+    }
+
+    .navLinksMobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+
+    .navLinksMobile:hover {
+        background: #fff;
+        color: #242424;
+        transition: 250ms;
+    }
+} */
